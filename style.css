@@ -1,0 +1,114 @@
+body {
+
+	cursor: none; 
+	
+}
+
+.cursor {
+	height: 40px;
+	width: 40px;    
+	pointer-events: none;
+	position: absolute;
+	border: 4px solid red;
+	border-radius: 50%;
+	box-sizing: border-box;
+	transition: 0, 1s;
+	transform: translate(-50%, -50%);
+}
+
+
+p {
+  margin: 0;
+}
+.calculator {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 428px;
+  height: 726px;
+  background-color: black;
+  border-radius: 5%;
+}
+
+.calculator-buttons {
+  padding: 0px 17px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(88px, auto));
+  grid-gap: 14px;
+  justify-content: flex-end;
+}
+.calculator-value {
+  color: white;
+  font-size: 70px;
+  padding: 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 165px;
+}
+
+.calculator-button {
+}
+
+.button {
+  border: none;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  color: white;
+  background-color: #333333;
+  font-size: 30px;
+  cursor: none
+}
+
+.calculator-button-clear {
+  background-color: #a5a5a5;
+}
+.calculator-button-plusminus {
+  background-color: #a5a5a5;
+}
+.calculator-button-percent {
+  background-color: #a5a5a5;
+}
+.calculator-button-divide {
+  background-color: #f1a33b;
+}
+.calculator-button-seven {
+}
+.calculator-button-eight {
+}
+.calculator-button-nine {
+}
+.calculator-button-multiply {
+  background-color: #f1a33b;
+}
+.calculator-button-four {
+}
+.calculator-button-five {
+}
+.calculator-button-six {
+}
+.calculator-button-minus {
+  background-color: #f1a33b;
+}
+.calculator-button-one {
+}
+.calculator-button-two {
+}
+.calculator-button-three {
+}
+.calculator-button-plus {
+  background-color: #f1a33b;
+}
+.calculator-button-zero {
+  width: 190px;
+  border-radius: 34px;
+}
+
+.calculator-button_zero {
+  grid-column: span 2;
+}
+.calculator-button-dot {
+}
+.calculator-button-equal {
+  background-color: #f1a33b;
+}
