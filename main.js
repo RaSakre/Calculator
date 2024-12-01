@@ -1,6 +1,5 @@
 import "./style.css";
 
-
 const numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 const signs = ["+", "-", "x", "/"];
 let leftNum = "";
@@ -19,7 +18,6 @@ const resetFn = () => {
 };
 
 const clearExpectResult = () => {
-  leftNum = "";
   rightNum = "";
   sign = "";
 };
@@ -31,18 +29,19 @@ buttons.forEach(function (button) {
       calcValue.textContent = "";
     }
     if (numbers.includes(key)) {
-      if (result !== 0) {
-        clearExpectResult();
-        leftNum = key; 
-        calcValue.textContent = leftNum; 
-        result = 0;
-      } else if (sign === "") {
+      if (sign === "") {
         leftNum += key;
         calcValue.textContent = leftNum;
       } else {
         rightNum += key;
         calcValue.textContent = rightNum;
       }
+    }
+    if (result !== 0) {
+      clearExpectResult();
+      leftNum = result.toString();
+      calcValue.textContent = leftNum;
+      result = 0;
     }
     if (signs.includes(key)) {
       sign = key;
